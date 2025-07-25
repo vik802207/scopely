@@ -7,6 +7,10 @@ const { validatePlayerPayload } = require('./validators');
 const app = express();
 app.use(bodyParser.json());
 
+app.get('/',(req,res)=>{
+    res.send("Backend is Running");
+})
+
 app.post('/promotion', (req, res) => {
   const start = Date.now();
   try {
@@ -25,6 +29,19 @@ app.post('/reload-rules', (req, res) => {
     res.json({ message: 'Rules reloaded successfully' });
   } catch (err) {
     res.status(500).json({ error: 'Failed to reload rules' });
+  }
+});
+app.post('/evaluate', (req, res) => {
+  const playerData = req.body;
+
+  try {
+    const result = evaluatePlayer(playerData);
+    metrics.totalRequests++;
+    metrics.successfulEvaluations++;
+    res.json(result);
+  } catch (err) {
+    metrics.failedEvaluations++;
+    res.status(400).json({ error: err.message });
   }
 });
 
