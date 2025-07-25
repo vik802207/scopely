@@ -11,7 +11,17 @@ A flexible and extensible Node.js-based rule engine to evaluate player eligibili
 - ✅ Modular design with separate validators and rule loader
 - ✅ In-memory caching and basic performance metrics
 - ✅ Easy rule editing via YAML
+--- 
+### App is live at Render:
 
+🔗 https://scopely-yj1r.onrender.com/
+
+Here’s a concise list of Postman API endpoints you can hit on the live server:
+```bash
+POST   https://scopely-yj1r.onrender.com/promotion
+POST   https://scopely-yj1r.onrender.com/reload-rules
+GET    https://scopely-yj1r.onrender.com/metrics
+```
 ---
 ### Screenshot
 ![App Screenshot](https://github.com/vik802207/scopely/blob/main/img/Screenshot%20(770).png?raw=true)
