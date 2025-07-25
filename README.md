@@ -13,6 +13,8 @@ A flexible and extensible Node.js-based rule engine to evaluate player eligibili
 - ✅ Easy rule editing via YAML
 
 ---
+### Screenshot
+
 
 ## 📁 Project Structure
 ```bash
