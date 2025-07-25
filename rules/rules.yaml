@@ -1,0 +1,17 @@
+rules:
+  - id: promo1
+    conditions:
+      level: { min: 10 }
+      spend_tier: "high"
+      country: ["US", "IN"]
+    promotion:
+      id: "promo_50off"
+      message: "Get 50% off your next purchase!"
+
+  - id: promo2
+    conditions:
+      days_since_last_purchase: { min: 30 }
+      country: ["US"]
+    promotion:
+      id: "promo_returning"
+      message: "Welcome back! Enjoy a 20% discount."
