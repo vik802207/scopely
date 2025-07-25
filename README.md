@@ -14,8 +14,11 @@ A flexible and extensible Node.js-based rule engine to evaluate player eligibili
 
 ---
 ### Screenshot
-
-
+![App Screenshot](https://github.com/vik802207/scopely/blob/main/img/Screenshot%20(770).png?raw=true)
+![App Screenshot](https://github.com/vik802207/scopely/blob/main/img/Screenshot%20(771).png?raw=true)
+![App Screenshot](https://github.com/vik802207/scopely/blob/main/img/Screenshot%20(772).png?raw=true)
+![App Screenshot](https://github.com/vik802207/scopely/blob/main/img/Screenshot%20(773).png?raw=true)
+---
 ## 📁 Project Structure
 ```bash
 ├── backend/
